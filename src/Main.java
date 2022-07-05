@@ -5,9 +5,10 @@ public class Main {
         CardGame cardGame = new CardGame();
 //        METHOD TO CREATE DECK
 
+        cardGame.createDeck();
 //        METHOD TO SHOW DECK
 
-
+        cardGame.printDeck();
 
     }
 }

@@ -18,17 +18,30 @@ public class CardGame {
 
 
 
-    //    CONTAINS AN ARRAYLIST<CARD> FOR THE DECK OF CARDS THAT CONTAINS ALL 52 CARDS.
 
-    ArrayList<Integer> cardDeck = new ArrayList<Integer>();
+
+    //    CONTAINS AN ARRAYLIST<CARD> FOR THE DECK OF CARDS THAT CONTAINS ALL 52 CARDS.
+    ArrayList<Card> cardDeck = new ArrayList<>();
+
+    String[] suitArray = {"\u2660", "\u2665", "\u2666", "\u2663"};
+    String[] namesArray = {"2","3","4","5","6","7", "8", "9", "10", "J", "Q", "K", "A"};
 
     public void createDeck() {
-       for (int i = 0; i < 4; i++) {
-           for (int j = 0; j < 14; j++) {
-               cardDeck.add(j);
+       for (int i = 0; i < suitArray.length; i++) {
+           for (int j = 0; j < namesArray.length; j++) {
+             Card card = new Card(namesArray[j], suitArray[i], j + 2 );
+
+              cardDeck.add(card);
            }
        }
 
+   }
+
+
+   public void printDeck() {
+       for (Card card: cardDeck ) {
+           card.printCard();
+       }
    }
 
 
