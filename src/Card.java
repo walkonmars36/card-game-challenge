@@ -35,11 +35,22 @@ public class Card {
 
 //    HAS AN INT VALUE (2,3,4,5,6,7,8,9,10,11,12,13,14)
 
+
+
 //    HAS A toString METHOD THAT DESCRIBES THE CLASS
 
  public void printCard() {
      System.out.println("This is the " + cardName + " of " + suit + " and has a value of " + value);
  }
+
+
+
+
+
+
+
+
+
 
 
 }

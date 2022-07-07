@@ -3,12 +3,23 @@ public class Main {
 
 
         CardGame cardGame = new CardGame();
+
+
+
 //        METHOD TO CREATE DECK
-
         cardGame.createDeck();
-//        METHOD TO SHOW DECK
 
+
+//        METHOD TO SHOW DECK
         cardGame.printDeck();
+
+        cardGame.shuffleDeck();
+
+        cardGame.dealCard();
+
+
+
+
 
     }
 }
