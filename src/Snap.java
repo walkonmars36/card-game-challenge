@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -21,7 +20,7 @@ public class Snap extends CardGame {
         for (int i = 0; i < Card.suitArray.length; i++) {
             for (int j = 0; j < Card.symbolArray.length; j++) {
                 Card card = new Card(Card.symbolArray[j], Card.suitArray[i], j + 2 );
-                cardDeck.add(card);
+                deckOfCards.add(card);
             }
         }
 
@@ -30,14 +29,14 @@ public class Snap extends CardGame {
 
     @Override
     public void shuffleDeck() {
-        Collections.shuffle(cardDeck);
+        Collections.shuffle(deckOfCards);
         System.out.println("********** Deck has been shuffled and is ready to play **********");
     }
 
     @Override
     public void dealCard() {
-        Card topCard = cardDeck.get(0);
-        cardDeck.remove(topCard);
+        Card topCard = deckOfCards.get(0);
+        deckOfCards.remove(topCard);
         discardPile.add(topCard);
 
         System.out.println("Your card is the " + topCard.getCardName() + " of " + topCard.getSuit());
@@ -62,7 +61,7 @@ public class Snap extends CardGame {
 
            while (!gameOver) {
 
-               if(cardDeck.size() == 0) {
+               if(deckOfCards.size() == 0) {
                    System.out.println("The deck is empty. Game Over.");
                    gameOver = true;
                }
@@ -86,7 +85,7 @@ public class Snap extends CardGame {
             System.out.println("Play again? (yes/no)");
             answer = scanner.nextLine();
             if (answer.equals("yes")) {
-                cardDeck.clear();
+                deckOfCards.clear();
                 discardPile.clear();
                 playGame();
             } else if (answer.equals("no")) {

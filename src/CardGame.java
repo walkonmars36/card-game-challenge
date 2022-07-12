@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
+import java.util.List;
 
 public class CardGame {
 
@@ -15,9 +15,8 @@ public class CardGame {
     }
 
     //    CONTAINS AN ARRAYLIST<CARD> FOR THE DECK OF CARDS THAT CONTAINS ALL 52 CARDS.
-    ArrayList<Card> cardDeck = new ArrayList<>();
-    public ArrayList<Card> getCardDeck() {return cardDeck;}
-
+    ArrayList<Card> deckOfCards = new ArrayList<>();
+    public ArrayList<Card> getDeckOfCards() {return deckOfCards;}
 
 
     ArrayList<Card> discardPile = new ArrayList<>();
@@ -41,7 +40,7 @@ public class CardGame {
            for (int j = 0; j < Card.symbolArray.length; j++) {
              Card card = new Card(Card.symbolArray[j], Card.suitArray[i], j + 2 );
 
-              cardDeck.add(card);
+              deckOfCards.add(card);
            }
        }
         System.out.println("********** Deck created **********");
@@ -49,7 +48,7 @@ public class CardGame {
 
     //    HAS A GET DECK METHOD THAT LISTS OUT THE CARDS IN THE DECK
     public void getDeck() {
-        for (Card card: cardDeck ) {
+        for (Card card: deckOfCards) {
             card.printCard();
 
         }
@@ -57,8 +56,8 @@ public class CardGame {
 
 //    Card dealCard() - takes the card from the top of the deck and returns it
     public void dealCard() {
-        Card topCard = cardDeck.get(0);
-        cardDeck.remove(topCard);
+        Card topCard = deckOfCards.get(0);
+        deckOfCards.remove(topCard);
         discardPile.add(topCard);
         System.out.println("You have drawn the " + topCard.getCardName() + " of " + topCard.getSuit());
      }
@@ -66,7 +65,7 @@ public class CardGame {
 //    ArrayList<Card> shuffleDeck() - shuffles the deck into a random order and stores the
 //    new shuffled deck back into the deckOfCards attribute
     public void shuffleDeck() {
-        Collections.shuffle(cardDeck);
+        Collections.shuffle(deckOfCards);
         System.out.println("********** Deck has been shuffled **********");
     }
 
@@ -75,7 +74,7 @@ public class CardGame {
 //    2222333344445555 etc) and stores the new shuffled deck back into the cardDeck
 //    attribute.
     public void sortDeckInNumberOrder() {
-        Collections.sort(cardDeck, (a, b) -> a.getValue() - b.getValue());
+        Collections.sort(deckOfCards, (a, b) -> a.getValue() - b.getValue());
         System.out.println("********** Deck is now sorted in number order **********");
 
     }
@@ -83,7 +82,7 @@ public class CardGame {
 
 // create a method that will sort the deck in suit order (e.g. hearts, diamonds, clubs, spades) and store the new sorted deck back into the cardDeck attribute
     public void sortDeckInSuitOrder() {
-        Collections.sort(cardDeck, (a, b) -> a.getSuit().compareTo(b.getSuit()));
+        Collections.sort(deckOfCards, (a, b) -> a.getSuit().compareTo(b.getSuit()));
         System.out.println("********** Deck is now sorted in suit order **********");
     }
 

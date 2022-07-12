@@ -19,7 +19,7 @@ public class Card {
         return suit;
     }
 
-    //    HAS AN INT VALUE (2,3,4,5,6,7,8,9,10,11,12,13,14)
+    //    HAS AN INT VALUE (2,3,4,5,6,7,8,9,10,11,12,13,14) -> Values are created in createDeck() -> CardGame
     public int getValue() {return value;}
 
 
