@@ -1,9 +1,9 @@
 # Java Halfway Challenge July/22 - Command Line Card Game
 
-------------
+
 ## Technology Consultancy 12 week programme at _Nology.io.
 
-------------
+
 
 
 ### Overview
@@ -50,7 +50,7 @@ By pressing enter in the command line, the user takes their turn. Each turn, a n
 from the deck. The game continues until two cards in a row have the same symbol, at which
 point the “player” wins and the game ends. 
 
------------
+
 -----------
 
 ### I have completed the above stages as of 12/7/22.
