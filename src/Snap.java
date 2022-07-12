@@ -7,11 +7,12 @@ import java.util.Scanner;
 
 public class Snap extends CardGame {
 
+    Scanner scanner = new Scanner(System.in);
 
     public Snap(String name) {
         super(name);
     }
-    Scanner scanner = new Scanner(System.in);
+
 
 
 
@@ -42,9 +43,18 @@ public class Snap extends CardGame {
         System.out.println("Your card is the " + topCard.getCardName() + " of " + topCard.getSuit());
     }
 
+
+    //   print out the top card on the discard pile
+    public void printDiscardPileMsg() {
+
+        System.out.println("This is now the top card on the discard pile");
+        System.out.println("*********************");
+
+    }
+
     public void playGame() {
         System.out.println("Welcome to Snap!");
-        System.out.println("Would you like to play? (yes/no)");
+        System.out.println("Type yes to play, or no to exit. (yes/no)");
         String answer = scanner.nextLine();
         if (answer.equals("yes")) {
             createDeck();
@@ -57,6 +67,7 @@ public class Snap extends CardGame {
 
 
 //           USING WHILE LOOP OVER THIS SECTION UNTIL THERE IS A MATCH
+//
             boolean gameOver = false;
 
            while (!gameOver) {

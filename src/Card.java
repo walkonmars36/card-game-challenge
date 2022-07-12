@@ -33,9 +33,10 @@ public class Card {
 
 //    HAS A toString METHOD THAT DESCRIBES THE CLASS
 
- public void printCard() {
-     System.out.println("This is the " + cardName + " of " + suit + " and has a value of " + value);
- }
+    @Override
+    public String toString() {
+        return "This is the " + cardName + " of " + suit + " and has a value of " + value;
+    }
 
 
 

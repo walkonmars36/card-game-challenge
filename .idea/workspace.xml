@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c79a77bb-cb95-4f10-a40d-87932f1595fa" name="Changes" comment="snap is functioning">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="c79a77bb-cb95-4f10-a40d-87932f1595fa" name="Changes" comment="added ReadMe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657615575948</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added ReadMe">
+      <created>1657617914237</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657617914237</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added ReadMe">
+      <created>1657617996426</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657617996426</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +159,7 @@
     <MESSAGE value="on stage 2 of challenge" />
     <MESSAGE value="stage 3 - added snap class" />
     <MESSAGE value="snap is functioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="snap is functioning" />
+    <MESSAGE value="added ReadMe" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ReadMe" />
   </component>
 </project>
